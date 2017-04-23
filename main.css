@@ -1,0 +1,163 @@
+/* Mobile First Media Queries */
+
+/* Base style */
+{ ... }
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) { ... }
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) { ... }
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) { ... }
+
+body {
+ background: #333;
+ margin: 0;
+ padding: 0rem 0rem;
+}
+
+#linkarea {
+  color: #DDD;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  overflow: visible;
+  border-left-color: #FFF;
+  border-left-style: solid;
+  border-left-width: 0.3rem;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  font-family: monospace;
+  word-wrap: normal;
+  display: block;
+  text-align: center;
+  margin-bottom: 5rem;
+  background: #666;
+}
+
+a {
+  color: #DDD;
+}
+a:hover {
+  color: #FFF;
+}
+a:focus {
+  color: #FFF;
+}
+
+header {
+  color: white;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /*margin-top: 2.5rem;*/
+}
+
+header > * {
+  margin: 1rem;
+  margin: auto auto;
+}
+
+header > a {
+  color: inherit;
+  padding: 3rem 2rem;
+}
+
+header > a:hover {
+  color: inherit;
+  background: #444;
+}
+
+header > a:focus {
+  outline: none;
+  color: black;
+}
+
+header > * > * {
+  margin: inherit;
+}
+
+header > * > ol {
+  padding: 0.5rem 1rem;
+}
+
+header > * > ol:hover {
+  background: #444;
+}
+
+header > * > ol > span {
+  color: lightgrey;
+  font-weight: bold;
+}
+
+main {
+  text-align: center;
+}
+main > img {
+  background: url(checkboard_bg.png);
+  background-repeat: repeat;
+  background-size: 2rem 2rem;
+  max-width: 90%;
+}
+main > * {
+  /*margin: auto;*/
+}
+main > .darkroom-container {
+  width: 90%;
+  margin: auto auto;
+}
+
+main > .darkroom-container > .darkroom-image-container > .canvas-container {
+  background: url(checkboard_bg.png);
+  background-repeat: repeat;
+  background-size: 2rem 2rem;
+}
+
+.darkroom-toolbar {
+  display: flex;
+}
+
+.darkroom-button-group {
+
+}
+
+.darkroom-button-default {
+  padding-top: 0.5rem;
+}
+
+#DRAWBUTTON {
+  padding-top: 0.25rem;
+}
+
+img.darkroom-button-icon {
+  width: 32px;
+  height: auto;
+  padding: 8px;
+}
+
+input.color-picker {
+  text-align: center;
+  width: 9rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  margin: auto auto;
+  display: none;
+}
+
+
+footer {
+  margin-top: 5rem;
+  height: 12rem;
+  width: 100%;
+  background-color: #444;
+  background: linear-gradient(to bottom, #444, #333);
+  padding: 1rem 3rem;
+  display: flex;
+  color: white;
+  overflow: hidden;
+}
+footer > .contact-list > li {
+  list-style-type: none;
+}
